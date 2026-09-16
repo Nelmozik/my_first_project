@@ -1,0 +1,210 @@
+/* ===== CSS-переменные (custom properties) ===== */
+:root {
+    --color-primary: #0f766e;
+    --color-accent: #f97316;
+    --color-text: #1f2937;
+    --color-bg: #fdfaf6;
+    --font-base: Verdana, Geneva, sans-serif;
+}
+
+/* ===== Часть 2.1: Базовые селекторы ===== */
+
+/* Селектор по тегу */
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+h1 {
+    color: var(--color-primary);
+}
+
+/* Селектор по классу */
+.main-header {
+    background-color: #eef2f1;
+    padding: 24px;
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.subtitle {
+    font-style: italic;
+    color: #55606b;
+}
+
+/* Селектор по ID */
+#site-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* ===== Часть 2.2: Комбинированные селекторы ===== */
+
+/* Дочерний селектор */
+.content > article {
+    background-color: #ffffff;
+    padding: 18px;
+    margin: 16px 0;
+}
+
+/* Селектор потомков */
+.post p {
+    margin-bottom: 12px;
+}
+
+/* Соседний селектор */
+h2 + p {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+/* Селектор атрибутов / класс карточки */
+.card {
+    border: 2px solid currentColor;
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--color-primary);
+}
+
+/* ===== Часть 3.1: Демонстрация каскада ===== */
+
+/* Базовый стиль для всех параграфов */
+p {
+    color: #333333;
+    font-size: 15px;
+}
+
+/* Более специфичный селектор */
+.post p {
+    color: #0f766e;
+}
+
+/* Ещё более специфичный */
+.featured-post p {
+    color: #b45309;
+}
+
+/* Самый специфичный */
+.featured-post .intro {
+    color: #7c3aed;
+    font-size: 17px;
+}
+
+/* ===== Часть 3.2: Изучение специфичности =====
+   .important          -> специфичность 0,1,0
+   li.important         -> специфичность 0,1,1
+   ul li                -> специфичность 0,0,2
+   !important            -> переопределяет каскад независимо от специфичности
+*/
+
+.important {
+    color: crimson;
+    font-weight: bold;
+}
+
+li.important {
+    color: darkorange;
+    text-decoration: underline;
+}
+
+ul li {
+    color: steelblue;
+}
+
+.important {
+    color: teal !important;
+}
+
+/* ===== Часть 4.1: Наследуемые свойства ===== */
+
+/* Наследуется дочерними элементами */
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--color-text);
+}
+
+/* Не наследуется по умолчанию (нужно явно указать) */
+.card {
+    border: 2px solid currentColor;
+    padding: inherit;
+}
+
+/* Наследование шрифтов */
+.examples {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* ===== Часть 4.2: Псевдоклассы и псевдоэлементы ===== */
+
+li:hover {
+    background-color: #fef3c7;
+    cursor: pointer;
+}
+
+li:nth-child(odd) {
+    background-color: #f5f5f4;
+}
+
+.main-header:hover {
+    background-color: #e2e8f0;
+    transition: background-color 0.3s;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+.post h2::after {
+    content: " ✦";
+    color: var(--color-accent);
+}
+
+.card::before {
+    content: "▸ ";
+    color: var(--color-primary);
+}
+
+/* ===== Часть 6: Задание на дополнительную оценку ===== */
+
+/* Медиа-запрос для адаптивности */
+@media (max-width: 600px) {
+    .main-header {
+        padding: 14px;
+    }
+
+    .content {
+        padding: 0 12px;
+    }
+
+    .subtitle {
+        font-size: 0.9em;
+    }
+}
+
+/* Анимация через @keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Эксперимент с наследованием currentColor:
+   .card задаёт color: var(--color-primary), а border и h3 внутри
+   используют currentColor — то есть подхватывают тот же цвет,
+   не дублируя значение. Если поменять .card { color: ... },
+   поменяются сразу и рамка, и заголовок внутри. */
+.card h3 {
+    color: currentColor;
+}
