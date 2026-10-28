@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адаптивный сайтик</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Адаптивный сайтик</h1>
+      <nav class="nav" aria-label="Главное меню">
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">&#9776;</button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#features">О нас</a></li>
+          <li><a href="#content">Услуги</a></li>
+          <li><a href="#content">Портфолио</a></li>
+          <li><a href="#footer">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <h2>Привет!</h2>
+        <p>Классный дизайн для всех устройств</p>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <h2>Наши преимущества</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3>Адаптивность</h3>
+            <p>Работает на всех устройствах</p>
+          </div>
+          <div class="feature-card">
+            <h3>Скорость</h3>
+            <p>Быстрая загрузка страниц</p>
+          </div>
+          <div class="feature-card">
+            <h3>Доступность</h3>
+            <p>Удобство для всех пользователей</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="content">
+      <div class="container">
+        <article class="main-content">
+          <h2>Основной контент</h2>
+          <p>Это главная статья с важной информацией. Текст и изображение подстраиваются под ширину экрана: на широком экране рядом находится боковая панель, на планшете и телефоне она переходит под статью.</p>
+          <img src="images/article.svg" alt="Пример изображения: один макет на мониторе, планшете и телефоне" class="responsive-img" width="800" height="400">
+        </article>
+        <aside class="sidebar">
+          <h3>Боковая панель</h3>
+          <p>Дополнительная информация, ссылки и подсказки для читателя.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

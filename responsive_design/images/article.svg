@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Иллюстрация: один макет на разных устройствах">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#667eea"/>
+      <stop offset="1" stop-color="#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- монитор -->
+  <rect x="90" y="80" width="300" height="190" rx="10" fill="#fff"/>
+  <rect x="104" y="94" width="272" height="150" rx="4" fill="#ecf0f1"/>
+  <rect x="116" y="106" width="248" height="18" fill="#2c3e50"/>
+  <rect x="116" y="134" width="248" height="40" fill="#a29bfe"/>
+  <rect x="116" y="184" width="76" height="46" fill="#dfe6e9"/>
+  <rect x="202" y="184" width="76" height="46" fill="#dfe6e9"/>
+  <rect x="288" y="184" width="76" height="46" fill="#dfe6e9"/>
+  <rect x="215" y="270" width="50" height="30" fill="#fff"/>
+  <rect x="180" y="300" width="120" height="10" rx="5" fill="#fff"/>
+  <!-- планшет -->
+  <rect x="440" y="120" width="150" height="190" rx="12" fill="#fff"/>
+  <rect x="452" y="134" width="126" height="160" rx="4" fill="#ecf0f1"/>
+  <rect x="460" y="142" width="110" height="14" fill="#2c3e50"/>
+  <rect x="460" y="164" width="110" height="30" fill="#a29bfe"/>
+  <rect x="460" y="202" width="52" height="40" fill="#dfe6e9"/>
+  <rect x="518" y="202" width="52" height="40" fill="#dfe6e9"/>
+  <!-- телефон -->
+  <rect x="630" y="160" width="86" height="150" rx="12" fill="#fff"/>
+  <rect x="640" y="174" width="66" height="122" rx="4" fill="#ecf0f1"/>
+  <rect x="646" y="180" width="54" height="10" fill="#2c3e50"/>
+  <rect x="646" y="196" width="54" height="26" fill="#a29bfe"/>
+  <rect x="646" y="228" width="54" height="30" fill="#dfe6e9"/>
+  <rect x="646" y="262" width="54" height="26" fill="#dfe6e9"/>
+</svg>
