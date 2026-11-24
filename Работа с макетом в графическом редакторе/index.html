@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Верстка по макету | Практическая работа №8</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="images/logo.svg" alt="Логотип" class="logo-img">
+        <span class="logo-text">Company</span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Главная</a></li>
+          <li><a href="#about" class="nav-link">О нас</a></li>
+          <li><a href="#services" class="nav-link">Услуги</a></li>
+          <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+          <li><a href="#contact" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <button class="cta-button" onclick="alert('Форма обратной связи')">Связаться</button>
+    </div>
+  </header>
+
+  <!-- Hero-секция -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Создаём цифровые продукты мирового класса</h1>
+        <p class="hero-description">
+          Мы помогаем бизнесу расти с помощью современных технологий
+          и продуманного дизайна
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary">Начать проект</button>
+          <button class="btn btn-secondary">Узнать больше</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="images/hero-visual.svg" alt="Hero изображение" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция преимуществ -->
+  <section class="features" id="services">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают нас</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🚀  </div>
+          <h3 class="feature-title">Скорость</h3>
+          <p class="feature-description">
+            Быстрая разработка и запуск проектов
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💎</div>
+          <h3 class="feature-title">Качество</h3>
+          <p class="feature-description">
+            Высокое качество кода и дизайна
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔧</div>
+          <h3 class="feature-title">Поддержка</h3>
+          <p class="feature-description">
+            Постоянная техническая поддержка
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h4>Company</h4>
+          <p>Разработка современных веб-приложений и комплексных цифровых решений для вашего бизнеса.</p>
+        </div>
+        <div class="footer-contacts">
+          <h4>Контакты</h4>
+          <p>Email: <a href="mailto:info@company.dev">info@company.dev</a></p>
+          <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+          <p>Адрес: г. Сургут, ул. Пушкина, д. 42</p>
+        </div>
+       <div class="social-links">
+  <a href="https://t.me/nelmozik26" target="_blank" rel="noopener noreferrer" aria-label="Telegram">TG</a>
+  <a href="https://github.com/Nelmozik" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+</div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

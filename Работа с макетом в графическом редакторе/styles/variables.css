@@ -1,0 +1,42 @@
+/* Цвета из макета */
+:root {
+  /* Основные цвета */
+  --primary-color: #2C3E50;
+  --secondary-color: #3498DB;
+  --accent-color: #E74C3C;
+
+  /* Текст */
+  --text-primary: #2C3E50;
+  --text-secondary: #7F8C8D;
+  --text-light: #FFFFFF;
+
+  /* Фоны */
+  --bg-light: #FFFFFF;
+  --bg-dark: #2C3E50;
+  --bg-gray: #ECF0F1;
+
+  /* Градиенты */
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+  /* Тени */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  /* Типографика из макета */
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-family-secondary: 'Open Sans', sans-serif;
+
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+}
